@@ -1,9 +1,9 @@
 #CN\_String
 A C library that makes Null-Terminated strings less of a pain in the arse.
 
-CN\_String is a library which helps users handle strings in a more "object-oriented" way in C. Chances are that you have been spoiled by std::string in C++. Getting string length in C is **NOT** constant time, meanwhile it is in C++. Also concatenation isn't as trivial in C as opposed to C++. This library supplies functions for enhanced string handling. You can concatenate and insert into CN\_Strings, and it supports C-Strings as well. This library is similar to CN\_Vec as in it handles dynamic memory management on its own, but it guarantees that its data will contain an empty string at least as opposed to a NULL pointer.
+CN\_String is a library which helps users handle strings in a more "object-oriented" way in C. Chances are that you have been spoiled by std::string in C++. Getting string length in C is **NOT** constant time, meanwhile it is in C++. Also concatenation isn't as trivial in C as opposed to C++. This library supplies functions for enhanced string handling. You can concatenate and insert into CN\_Strings, and it supports C-Strings as well. This library is similar to CN\_Vec as in it handles dynamic memory management on its own, but it guarantees that its data will contain an empty string at least as opposed to a NULL pointer when empty with no text.
 
-Example
+Example:
 ```C
 #include <stdio.h>
 #include <stdlib.h>
