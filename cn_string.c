@@ -52,6 +52,20 @@ cn_byte cn_string_at(CN_STRING str, cn_uint pos) {
 	return str->data[pos];
 }
 
+void cn_string_set(CN_STRING dest, CN_STRING src) {
+	cn_string_clear(dest);
+	dest->len  = src->len;
+	dest->data = (cn_byte *) calloc(1, src->len + 1);
+	memcpy(dest->data, src->data, src->len);
+}
+
+void cn_string_set_from_cstr(CN_STRING dest, char* src) {
+	cn_string_clear(dest);
+	dest->len  = strlen(src);
+	dest->data = (cn_byte *) calloc(1, dest->len + 1);
+	memcpy(dest->data, src, dest->len);
+}
+
 CN_STRING cn_string_substr(CN_STRING str, cn_uint pos, cn_uint len) {
 	char* arr = cn_string_substr_as_cstr(str, pos, len);
 	

@@ -13,7 +13,7 @@ Example:
 main() {
 	//Starting with a blank string
 	CN_STRING str = cn_string_init();
-	cn_string_insert_from_cstr(str, "This is a test.", 0);
+	cn_string_set_from_cstr(str, "This is a test.");
 	printf("%s\n", cn_string_str(str));
 	cn_string_free(str);
 	

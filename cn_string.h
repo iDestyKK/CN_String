@@ -47,6 +47,8 @@ CN_STRING cn_string_from_cstr       (const char*);
 char*     cn_string_str             (CN_STRING);
 cn_uint   cn_string_len             (CN_STRING);
 cn_byte   cn_string_at              (CN_STRING, cn_uint);
+void      cn_string_set             (CN_STRING, CN_STRING);
+void      cn_string_set_from_cstr   (CN_STRING, char*);
 CN_STRING cn_string_substr          (CN_STRING, cn_uint  , cn_uint);
 char*     cn_string_substr_as_cstr  (CN_STRING, cn_uint  , cn_uint);
 void      cn_string_insert          (CN_STRING, CN_STRING, cn_uint);
@@ -66,6 +68,9 @@ void      cn_string_free            (CN_STRING);
 \***************************************/
 
 /*
+    2017/01/23 (0.1.1)
+      - Added "cn_string_set()". I'm not sure why I didn't add that before. :/
+
     2017/01/20 (0.1.0)
       - Added many functions and made string guaranteed to be allocated if you
         use the functions the library supplies.
