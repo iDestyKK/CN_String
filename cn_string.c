@@ -1,7 +1,7 @@
 /*
  * CN_String Library (C Version)
  *
- * Version 0.1.0 (Last Updated: 2017/01/20)
+ * Version 0.1.1 (Last Updated: 2017/01/23)
  *
  * Description:
  *     Implements a wrapper around char pointer-based memory references to make
